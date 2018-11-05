@@ -97,7 +97,7 @@ aws cloudformation deploy --region $REGION --template-file continuous_sagemaker.
 If you would like Slack notifications disabled for your pipeline then from the console ensure `EnableSlack` is set to **False** or use the following command to deploy from the command line instead:
 
 ```bash
-aws cloudformation deploy --region $REGION --template-file continuous_sagemaker.output.yaml --stack-name $STACKNAME --capabilities CAPABILITY_NAMED_IAM --parameter-overrides SageMakerExecutionRole=$SAGEMAKERROLE EnableSlack="False"
+aws cloudformation deploy --region $REGION --template-file continuous_sagemaker.output.yaml --stack-name $STACKNAME --capabilities CAPABILITY_NAMED_IAM --parameter-overrides SageMakerExecutionRole=$SAGEMAKERROLE EnableSlack="false"
 ```
 
 ### Uploading Training Data
